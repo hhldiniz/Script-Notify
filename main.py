@@ -25,9 +25,9 @@ if __name__ == "__main__":
     print(call_return)
 
     email_sender.send_email(
-        Environment.SENDER.value,
-        Environment.PASSWORD.value,
-        Environment.RECIPIENT.value,
+        argument_factory.sender,
+        argument_factory.password,
+        argument_factory.recipient,
         "Script Execution Complete",
         call_return,
     )
